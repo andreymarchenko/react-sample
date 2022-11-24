@@ -1,0 +1,53 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "eslint-plugin-prettier",
+    "react-hooks",
+    "import"
+  ],
+  "extends": [
+    "airbnb-typescript",
+    "prettier"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "prettier/prettier": ["error"],
+    "no-duplicate-imports": "error",
+    "no-console": "off",
+    "no-return-assign": ["error", "except-parens"],
+    "@typescript-eslint/no-unused-expressions": [
+      "error",
+      { "allowShortCircuit": true, "allowTernary": true }
+    ],
+    "react/prefer-stateless-function": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-indent": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/forbid-prop-types": "off",
+    "react/jsx-indent-props": "off",
+    "react/jsx-curly-newline": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
+    "spaced-comment": ["error", "always", { "markers": ["/"] }],
+    "react/prop-types": "off",
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/quotes": "off",
+    "no-underscore-dangle": "off",
+    "@typescript-eslint/comma-dangle": "off",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "@typescript-eslint/naming-convention": "off",
+    "react/destructuring-assignment": "off",
+    "no-prototype-builtins": "off",
+    "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["state"] }],
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "state|action", "ignoreRestSiblings": true }]
+  }
+}
